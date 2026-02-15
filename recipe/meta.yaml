@@ -7,6 +7,8 @@ package:
 source:
   url: https://github.com/kimwalisch/primecount/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 870f2c17b660449d10a593b31d2c69e720ff8060ec1b5099c37f451c005f671e
+  patches:
+    - fix-to_chars-macos.patch  # [osx]
 
 build:
   number: 0
