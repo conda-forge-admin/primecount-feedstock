@@ -2,7 +2,7 @@
 
 package:
   name: primecount
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://github.com/kimwalisch/primecount/archive/refs/tags/v{{ version }}.tar.gz
