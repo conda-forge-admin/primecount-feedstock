@@ -1,0 +1,13 @@
+--- a/src/print.cpp
++++ b/src/print.cpp
+@@ -19,7 +19,9 @@ bool print_variables_ = false;
+ 
+ } // namespace
+ 
+-#if __cplusplus >= 201703L && \
++#if __cplusplus >= 201703L &&       \
++    !(defined(__APPLE__) &&         \
++      __MAC_OS_X_VERSION_MIN_REQUIRED < 130400) && \
+     __has_include(<charconv>)
+ 
+ #include <primecount.hpp>
